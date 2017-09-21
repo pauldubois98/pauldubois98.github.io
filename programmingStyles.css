@@ -6,7 +6,12 @@ h1{
     height: 3em;
     background: linear-gradient(180deg, white, white 30%, rgba(0,0,0,0));
 }
-
+h1 :nth-child(1){
+    color: rgb(55,118,170)
+}
+h1 :nth-child(2){
+    color: rgb(255,207,63)
+}
 header{
     position: fixed;
     top:0;
@@ -16,18 +21,21 @@ header{
     background-color: rgba(0,0,0,0);    
     padding-bottom: 2em;
 }
+section{
+    margin-top: 3em;
+}
 img{
     width: 10em;
     background: linear-gradient(180deg, white, white 80%, rgba(0,0,0,0));
 }
-
-
-
-a{
-    color: black;
-    font-style: normal;
-    
+strong{
+    margin-left: 1em;
 }
+h3 a{
+    color: black;
+}
+
+
 body:nth-child(2){
     margin-top: 7em;
 }
