@@ -1,1 +1,7 @@
-Web Pages of Paul Dubois==================[Web Page Link](https://pauldubois98.github.io/)[Web Programming Page Link](https://pauldubois98.github.io/prgm.html)
+Web Pages of Paul Dubois
+========================
+
+[Web Page Link](https://pauldubois98.github.io/)
+
+
+
