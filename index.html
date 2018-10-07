@@ -1,95 +1,347 @@
 <!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="description" content="My online CV">
-        <meta name="keywords" content="CV,Paul,Dubois,Curriculum Vitae">
-        <meta name="author" content="Paul Dubois">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Paul Dubois</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <link rel="icon" type="image/png" href="logo/vide.png" />
-    </head>
+<html>
 
-    <body>
-        <header>
-            <div id='titres'>
-                <h1>Paul Dubois</h1>
-                <h2>Student in 2<sup>nd</sup> year MSci of Mathematics at <a href="https://www.ucl.ac.uk/">University College of London</a></h2>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- others -->
+    <meta charset="utf-8" />
+    <title>Paul Dubois - CV</title>
+    <meta name="description" content="My online CV">
+    <meta name="keywords" content="CV,Paul,Dubois,Curriculum Vitae">
+    <meta name="author" content="Paul Dubois">
+    <link rel="icon" type="image/png" href="logo/vide.png" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body class="">
+    <!-- Nav Bar -->
+    <div class="navbar-fixed">
+        <nav class="nav-extended colorPrimary">
+            <div class="nav-wrapper ">
+                <h1><a class="brand-logo">Paul Dubois</a></h1>
+                <!--
+                <ul id="nav-mobile" class="right hide-on-med-and-down ul-not">
+                    <li><a href="index.html">old</a></li>
+                    <li><a href="prgm.html">programming</a></li>
+                </ul>
+                -->
+                <img src="logo/python-paul-logo-transparent.png" alt="logo" class="right hide-on-med-and-down logo">
             </div>
-            <a href="img/Paul_Dubois.jpg"><img src="img/Paul_Dubois_mini_bis.png" alt="Profile picture" title="Click to enlarge" /></a>
-        </header>
+            
+            <div class="nav-content ">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab hide-on-small-only"><a href="#Profile">Profile</a></li>
+                    <li class="tab"><a href="#Experience">Experience</a></li>
+                    <li class="tab"><a href="#Education">Education</a></li>
+                    <li class="tab"><a href="#Technology">Technology</a></li>
+                    <li class="tab"><a href="#Projects">Projects</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+    </div>
 
-        <section id='contact'>
-            <h3>Contact:</h3>
-            <p>
-                Address in France: 2 résidence des côteaux, 31 810 VENERQUE<br> Address in United Kingdom: 20 Rydal Water, Hampstead Road, NW1 3ED, LONDON<br> E-mail: <a href="mailto:pauldubois98@gmail.com">pauldubois98@gmail.com</a><br> Phone: +33 6 89 08 94 56
-            </p>
-        </section>
+    <div class="out"></div>
+    
+    <h4>Student in 3<sup>rd</sup> year MSci of Mathematics at University College of London (UCL)</h4>
 
-        <h3>Education:</h3>
-        <ul>
-            <li>2017-2018: 2<sup>nd</sup> year of MSci in Mathematics, at University College of London (UCL), England</li>
-            <li>2016-2017: 1<sup>st</sup> year of MSci in Mathematics, at University College of London (UCL), England</li>
-            <li>2016: “BAC S SVT, Math” (Final high school exam of scientific section), with highest honors (Mention Très Bien)</li>
-            <li>2015-2016: 12<sup>th</sup> grade, scientific section, in Pins-Justaret High School, France</li>
-            <li>2015: SAT: Score in math: 740/800 (top 3%)</li>
-            <li>2014-2015: 11<sup>th</sup> grade, scientific section in International School of Boston, United States</li>
-            <li>2013-2014: 10<sup>th</sup> grade, general section, in Pins-Justaret High School, France</li>
-        </ul>
-        <h3>Awards and Prices:</h3>
-        <ul>
-            <li>2017: Dept. Undergraduate 1<sup>st</sup> year Prize in Mathematics</li>
-            <li>2017: Price of the competition « Innovez » (contest of young inventors) in the French scientific review “Science et Vie Junior” for a Morse decoding machine (February 2017, SVJ n°329) – 1000€</li>
-            <li>2011: Award of honor of the Lycée Français de Chicago for solving mathematical puzzles</li>
-            <li>2011: 2<sup>nd</sup> Price "Do Science" Lycée Français de Chicago</li>
-        </ul>
-        <h3>Experience:</h3>
-        <ul>
-            <li>January - March 2018: Research Assistance on Textual Data Analysis with Python 3 for Susana Vasserman (Harvard University)</li>
-            <li>September 2017: Internship in Mathematics at IRIT, University of Toulouse (3 weeks), under supervision of Professor Martin Strecker</li>
-            <li>August 2017: Summer Camp on Artificial Intelligence at CIMI, University of Toulouse (1 week)</li>
-            <li>June 2017: Working as dishwasher in the restaurant “La Plage” Venerque (1 month)</li>
-        </ul>
-        <h3>Programming Skills:</h3>
-        <ul>
-            <li>Coding with Python (Oriented Object Programming, Web scraping, Multi-Threading, Graphical Interfaces, general advance knowledge)</li>
-            <li>Coding Web pages (Static: Advance knowledge, Dynamic: Beginner)</li>
-            <li>Using Git and GitHub for projects</li>
-            <li>Writing in Latex</li>
-            <li>Coding in C/C++ for electronic</li>
-            <li><a href="prgm.html">here</a> my programming web page</li>
-        </ul>
-        <h3>Community activities:</h3>
-        <ul>
-            <li>2013-2014 and 2015-2016: Member of “Math-en-Jean”: Mathematic research and presentation of research in conferences at high school</li>
-            <li>2014-2016: Member of the community info@lèze an educative FabLab)</li>
-            <li>2011-2016: Member of European boy scout Association. Patrol chef in 2015-2016</li>
-        </ul>
-        <h3>Sports:</h3>
-        <ul>
-            <li>Rock climbing (11 years of practice) </li>
-            <li>Skiing (Gold star and silver arrow in French skiing school)</li>
-            <li>Level 2 of French Sailing Federation in sailboard</li>
-            <li>Level 2 of French Sailing Federation in catamaran</li>
-        </ul>
-        <h3>Languages:</h3>
-        <ul>
-            <li>French (mother tongue)</li>
-            <li>English (fluent)</li>
-        </ul>
-        <h3>Other:</h3>
-        <ul>
-            <li>French Driver License (2017)</li>
-            <li>Civilian Citizenship Certificate - Civilian Prevention and Rescue Level 1 (PSC1) (2012)</li>
-        </ul>
+    <div class="main">
+        <span class="anchor" id="Profile"></span>
+        <div class="col s12 ">
+            <h2 class="header colorPrimaryText">Profile</h2>
+            I am a very <strong>hard worker</strong>, <strong>enthusiastic</strong> about any project. Also <strong>passionate</strong> by the beauty of <strong>science</strong>.
+        </div>
+        <span class="anchor" id="Experience"></span>
+        <div class="col s12 ">
+            <h2 class="header colorPrimaryText">Experience</h2>
+            <h3>Research assistant <span class="right">January 2018 - March 2018</span></h3>
+            Textual Data Analysis with Python for Susana Vasserman (PhD student from Harvard University)<br> Remote coding experiment
+            <h3>Internship at IRIT, University of Toulouse (France) <span class="right">August 2017 - September 2017</span></h3>
+            Under supervision of Professor Martin Strecker<br> Worked on artificial intelligence and logic
+            <h3>Kitchen clerk | in the restaurant “La Plage”, Venerque (France) <span class="right">June 2018 – July 2018</span></h3>
+            <h3>Dishwasher | in the restaurant “La Plage”, Venerque (France) <span class="right">June 2017 – July 2017</span></h3>
+            Learned humility and human skills
+            <h3>Scouting <span class="right">September 2011 - Nowadays</span></h3>
+            <ul>
+                <li>Chief since September 2015</li>
+                <li>Treetop patrol (n°2019) in 2015-2016</li>
+            </ul>
+            Forged leadership and event organizing skills
+        </div>
+        <span class="anchor" id="Education"></span>
+        <div class="col s12 ">
+            <h2 class="header colorPrimaryText">Education</h2>
+            <h3>UCL Mathematics Department<span class="right">September 2016 – June 2020</span></h3>
+            <strong>Msci Mathematics</strong><br>
+            <em>Results:</em>
+            <ul>
+                <li>1<sup>st</sup> year: average of 86% and UCL Dept. Undergraduate 1st year Prize in Mathematics (deserved to the top 10 students while I was 6th)</li>
+                <li>2<sup>nd</sup> year: average of 82%</li>
+                <li>Expected degree results: First-class honors with +80% of average</li>
+            </ul>
+            <em>Modules taken:</em>
+            <ul>
+                <li>Complex Anaysis</li>
+                <li>Real Analysis</li>
+                <li>Multivariable Analysis</li>
+                <li>Measure Theory</li>
 
-        <section id='space'></section>
+                <li>Linear Algebra</li>
+                <li>Groups and Rings (Algebra)</li>
+                <li>Commutative Algebra</li>
+                <li>Galois Theory</li>
 
-        <section id='links'>
-            <p>
-                Web site created by Paul Dubois (myself)<br> See <a href="prgm.html">my programming web page</a>
-            </p>
-        </section>
-    </body>
+                <li>Number Theory</li>
+                <li>Elliptic Curves</li>
+
+                <li>Differential Geometry</li>
+
+                <li>Fluids Mechanics</li>
+                <li>Newtonian Mechanics</li>
+
+                <li>Probabilities and Statistics</li>
+            </ul>
+            Developed thinking outside of the box and analytical skills
+            <h3>Lycée Jean-Pierre Vernant, Pins-Justaret (France)<span class="right">September 2013 – July 2016</span></h3>
+            <ul>
+                <li>French Baccalaureate of scientific section, math specialty - with highest honors (Mention Très Bien)</li>
+                <li>Price of the competition « Innovez » (contest of young inventors) in the French scientific review “Science et Vie Junior” for a Morse decoding machine (SVJ n°329) - 1000€</li>
+                <li>Member of “Math-en-Jean”: High School mathematic research & presentation in conferences – learned team work</li>
+            </ul>
+            <h3>International School of Boston (US)<span class="right">January 2015 – July 2015</span></h3>
+            Scholarship Aptitudes Test (SAT), Score in math: 740/800 (top 3%)
+            <h3>Lycée Français de Chicago (US)<span class="right">September 2010 – July 2011</span></h3>
+            Award of honor for solving mathematical puzzles & 2nd Price "Do Science" <br> Learned how to adapt myself in a new environment
+
+        </div>
+        <span class="anchor" id="Technology"></span>
+        <div class="col s12 ">
+            <h2 class="header colorPrimaryText">Technology</h2>
+
+            <h3><span class="right"></span></h3>
+            <h3><span class="right"></span></h3>
+            <h3><span class="right"></span></h3>
+            <h3><span class="right"></span></h3>
+            {Most of my computer science skills are self-thought from documentations, books and online courses.}<br> {I acquired problem solving skills while working on my own projects.}<br>
+            <strong>Programming</strong>
+            <ul>
+                <li>Python: Oriented Object Programming (OOP), Web scraping, Multi-Threading, Graphical Interfaces (with Tkinter & PyGame), Data analysis, general advanced knowledge</li>
+                <li>C/C++ (mostly for electronics)</li>
+                <li>Android Apps (with Java)</li>
+                <li>Web pages (with HTML, CSS & JavaScript) [as this one]</li>
+            </ul>
+            <strong>Tools</strong>
+            <ul>
+                <li>Command line (with Linux and Windows)</li>
+                <li>Git and GitHub for projects [as this one]</li>
+                <li>Latex to type documents</li>
+                <li>APIs for data</li>
+            </ul>
+            Member of the community info@lèze (an educative FabLab)
+        </div>
+
+        <span class="anchor" id="Projects"></span>
+        <h2 class="header colorPrimaryText">Projects</h2>
+
+    </div>
+    <div class="">
+        <div class="row">
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image ">
+                        <img src="img/cauchyCroftonApp.jpg" class="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Cauchy Crofton App</span>
+                        <p>An android app applying the Cauchy-Crofton Formulae to an image.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/pauldubois98/CauchyCroftonApp">GitHub repo.</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.the.unknown.cauchycroftonapp" class="right">Play Store</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image ">
+                        <img src="img/primesGame.jpg" class="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title " >Primes Game</span>
+                        <p>This "game" is made for (crazy) math students.<br>
+                            The goal is to factorize a number, that is generated at random.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/pauldubois98/PrimesGame">GitHub repository</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image ">
+                        <img src="img/pyromane.png" class="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title " >Pyromaniac Game</span>
+                        <p>An unpretentious application where one incarnates a pyromaniac who wants to burn down a forest. Above all a game of logic and strategy.<br>
+                            Also avaible as an Android App.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/pauldubois98/pyromane">GitHub repo.</a>
+                        <a href="https://pauldubois98.github.io/pyromane/menuEn.html" class="right">Game (web)</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image ">
+                        <img src="img/graphComplexFonctions.png" class="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title " >Graph Complex Functions</span>
+                        <p>An easy way to plot the images of simple figure by a complex function.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/pauldubois98/Graph-Complex-Functions">GitHub repository</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image ">
+                        <img src="img/cryptedEditor.png" class="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title " >Crypted Editor</span>
+                        <p>A basic text editor that is RSA encrypted.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/pauldubois98/CryptedEditor">GitHub repository</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image ">
+                        <img src="img/gameOfLife.jpg" class="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title " >Conway's Game of Life</span>
+                        <p>A basic program that simulate Conway's game of Life ("Jeu de la Vie" in French), a cellular automaton.<br>
+                        Made for "Maths.en.Jean", a math colloquium</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/pauldubois98/MeJ-Jeu_de_la_Vie">GitHub repository</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image ">
+                        <img src="img/langtonAnts.png" class="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title " >Langton's Ant</span>
+                        <p>A basic program that simulate Langton's Ant, a cellular automaton.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/pauldubois98/FourmieLangton">GitHub repository</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image ">
+                        <img src="img/transfoImageMatrix.png" class="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title " >Transformations Image-Matrix</span>
+                        <p>A basic web app that shows how we can apply matices to transform images.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/pauldubois98/TransformationsMatriceImage">GitHub repo.</a>
+                        <a href="https://pauldubois98.github.io/TransformationsMatriceImage" class="right">Web App</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image ">
+                        <img src="img/morscikey.jpg" class="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title " >Morscikey</span>
+                        <p>A small keyborad with 4 buttons... you need to types the morse code of the letters !</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/pauldubois98/Morscikey">GitHub repository</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image ">
+                        <img src="img/morscipio.jpg" class="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title " >Morscipio</span>
+                        <p>A machine that enables you to reicive some morse with the buttons, and will diplay the clear text on the screen.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/pauldubois98/Morscipio">GitHub repository</a>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer colorPrimary">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Contact informations</h5>
+                    <p class="grey-text text-lighten-4">Address in France: 2 résidence des côteaux, 31 810 VENERQUE<br>
+                        Address in United Kingdom: 20 Rydal Water, Hampstead Road, NW1 3ED, LONDON<br>
+                        E-mail: pauldubois98@hotmail.com</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Profiles</h5>
+                    <ul class="ul-not">
+                        <li><a class="grey-text text-lighten-3 valign-wrapper" href="https://www.linkedin.com/in/paul-dubois-79b116136">
+                            <img src="https://blog.addthiscdn.com/wp-content/uploads/2015/11/linkedin-round.png"  alt="linkedin" class="circle-bt"><span class="space"></span>
+                            LinkedIn
+                        </a></li>
+                        <li><a class="grey-text text-lighten-3 valign-wrapper" href="https://github.com/pauldubois98">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png" alt="github" class="circle-bt"><span class="space"></span>
+                            GitHub
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 #theUnknown
+            </div>
+        </div>
+    </footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
 </html>
