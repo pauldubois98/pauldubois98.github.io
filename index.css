@@ -49,6 +49,12 @@ ul {
     width: 5em;
 }
 
+/*
+.card:hover {
+        outline: 999em solid rgba(0,0,0,.6);
+}
+*/
+
 .card-content{
     height: 15em;
 }
