@@ -69,6 +69,11 @@ ul {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #b71c1c ;
 }
+.card-subtitle{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #d85600 ;
+    /*color: #d85600 ;*/
+}
 @media screen and (min-width: 800px) {
     h1{
         margin-right: 60%;
