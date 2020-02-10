@@ -1,131 +1,401 @@
-h1{
+/* ____________________ GENERAL ____________________ */
+body{
+    /* no margin/padding */
     margin: 0;
-    text-align: center;
+    padding: 0;
+    /* text color: black slightly transparent */
+    color: rgba(0,0,0,0.87);
+    /* text font */
+    font-size: 1.2em;
+    font-weight: normal;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 
-h2 {
+/* ____________________ NAVIGATION BAR ____________________ */
+header{
+    /* display on the top */
+    z-index: 1;
+    /* padding & position */
+    padding-top: 0.5em;
+    top: 0;
+    position: sticky;
+    /* color (background & shadow) */
+    background: #607d8b;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+    /* hover transition */
+    -webkit-transition: box-shadow .2s ease;
+    transition: box-shadow .2s ease;
+}
+header:hover{
+    /* double shadow size */
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.14),0 6px 2px -4px rgba(0,0,0,0.12),0 2px 10px 0 rgba(0,0,0,0.2);
+}
+header h1{
+    /* sapce around element */
+    margin: 0;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    width: 50%;
+    /* font work */
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 200;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+@media screen and (max-width: 750px){
+    header h1{
+        width: 100%;
+    }   
+}
+nav{
+    /* margins */
+    padding-top: 0.8em;
+    padding-bottom: 0.5em;
+}
+.tabs{
+    /* align horizontally */
+    display: flex;
+    justify-content: space-around;
+    /* slight margin on the left */
+    padding: 0 2em;
+    /* space around */
+    margin: 0;
+}
+.tab{
+    /* color (to be slightly chnaged on hover) */
+    color: rgba(255,255,255,0.7);
+    /* padding 0 vertically, 12px horizontally*/
+    padding: 0 12px;
+    /* change mouse pointer */ 
+    cursor: pointer;
+    /* delete the dot from listing */
+    display: block;
+    /* font work */
+    text-transform: uppercase;
+    font-size: 0.85em;
+    font-weight: normal;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    /* hover transition */
+    -webkit-transition: color .28s ease, background-color .28s ease;
+    transition: color .28s ease, background-color .28s ease;
+    /* overflow effect */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tab:hover{
+    /* slight change of color */
+    color: #fff;
+    /* overflow effect */
+    overflow: visible;
+}
+@media screen and (max-width: 650px){
+    .tab{
+        padding: 0 3px;
+    }
+    .tabs{
+        padding: 0 2px;
+    }
+}
+/* ____________________ ONE LINER PROFILE ____________________ */
+h4{
+    /* no margin*/
+    margin: 0;
+    /* text */
+    color: #263238;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+/* ____________________ MAIN CONTENT ____________________ */
+.anchor {
+    /* adjust sections link to the top banner */
+    visibility: hidden;
+    display: block;
+    height: 5em;
+    margin-top: -5em;
+}
+h2{
+    /* color */
+    color: #607d8b;
+    /* font */
+    font-weight: 400;
+    font-size: 1.8em;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    /* space */
     margin-top: 0.5em;
     margin-bottom: 0.2em;
-    font-size: 1.8em;
-    color: #607d8b !important;
     padding-left: 0.4em;
 }
-
-h3 {
-    margin: 0;
-    font-size: 1.3em;
-    font-weight: 600;
-    color: #37474f !important;
+a{
+    /* color */
+    color: #039be5;
+    /* no underline */
+    text-decoration: none;
+    /* hover transition */
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
 }
-
-h4 {
-    text-align: center;
-    font-weight: bold;
-    color: #263238;
+a:hover{
+    /* slight color change */
+    color: #29b6f6;
 }
-
-
-strong {
-    font-weight: bold;
+.subyear{
+    /* left shift */
+    padding-left: 1em;
 }
-
 ul {
+    /* left shift */
+    padding-left: 2em;
+    /* bo margin */
     margin: 0;
-    padding-left: 20px;
 }
-
-.ul-not {
-    list-style-type: none;
-}
-
-.main {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    font-size: 1.2em;
-    max-width: 1000px;
-}
-
-.logo{
-    height: 5em;
-    width: 5em;
-}
-
-/*
-.card:hover {
-        outline: 999em solid rgba(0,0,0,.6);
-}
-*/
-
-.card-content{
-    height: 15em;
-}
-
-.card-image img {
-    height: 25em;
-    object-fit: cover;
-
-}
-.card-title{
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #b71c1c ;
-}
-.card-subtitle{
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #d85600 ;
-    /*color: #d85600 ;*/
-}
-@media screen and (min-width: 800px) {
-    h1{
-        margin-right: 60%;
-    }
+.main{
+    margin-left: 3%;
+    max-width: 94%;
 }
 @media screen and (min-width: 1200px) {
     .main {
         margin-left: 5%;
-        max-width: 80%;
+        max-width: 90%;
     }
 }
-
 @media screen and (min-width: 1400px) {
     .main {
-        max-width: 70%;
+        margin-left: 7%;
+        max-width: 86%;
     }
     h4 {
         margin-right: 15%;
     }
 }
-
 @media screen and (min-width: 1600px) {
     .main {
-        max-width: 60%;
+        margin-left: 10%;
+        max-width: 80%;
     }
 }
 
-
-.header {}
-
-.anchor {
+/* ____________________ CARDS ____________________ */
+.Projects{
+    /* nice disposition of the cards */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.card{
+    /* arrange sub items*/
+    display: flex;
+    flex-direction: column;
+    /* size */
+    min-width: 15em;
+    max-width: 20em;
+    width: 23%;
+    min-height: 5em;
+    /* spacing */
+    margin: 0.5em 0.1em;
+    /* round border */
+    border-radius: 5px;
+    /* shadow */
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+    /* hover transition */
+    -webkit-transition: box-shadow .5s ease;
+    transition: box-shadow .5s ease;
+}
+.card:hover{
+    /*background: lightgray;*/
+    /* shadow */
+    -webkit-box-shadow: 0 6px 6px 0 rgba(0,0,0,0.14),0 9px 3px -6px rgba(0,0,0,0.12),0 3px 15px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.14),0 9px 3px -6px rgba(0,0,0,0.12),0 3px 15px 0 rgba(0,0,0,0.2);
+}
+.card-content{
+    padding: 1em;
+    /* sub-display */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.card-content p{
+    /* proper paragraph */
+    text-align: justify;
+    text-justify: inter-word;
+    /* take maximum height */
+    flex-grow: 1;
+    /* adjust font */
+    font-size: 0.8em;
+}
+.card-image{
+    /* round border (top) */
+    border-radius: 5px 5px 0 0;
+    /* adjust image size */
+    width: 100%;
+    height: 16em;
+    /* use all space (but display only part of the image) */
+    object-fit: cover;
+    /* adjust box size */
     display: block;
-    height: 6em;
-    margin-top: -6em;
-    visibility: hidden;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.card-image:active{
+    /* display all image (but loose space) */
+    object-fit:scale-down;
+}
+.card-context{
+    /* font work */
+    font-weight: 700;
+    color: #311b92;
+    color: #212121;
+    font-size: 1.2em;
+    /* hover transition */
+    -webkit-transition: color 2s ease;
+    transition: color 2s ease;
+}
+.card-context:hover{
+    /* slight change of colors */
+    color: #616161;
+}
+.card-title{
+    /* font work */
+    font-weight: 700;
+    color: #b71c1c;
+    font-size: 1.2em;
+    /* hover transition */
+    -webkit-transition: color 2s ease;
+    transition: color 2s ease;
+}
+.card-title:hover{
+    /* slight change of colors */
+    color: #616161;
+}
+.card-subtitle{
+    /* font work */
+    font-weight: 600;
+    color: #d85600;
+    font-size: 1.0em;
+    /* hover transition */
+    -webkit-transition: color 2s ease;
+    transition: color 2s ease;
+}
+.card-subtitle:hover{
+    /* slight change of colors */
+    color: #616161;
+}
+.card-action{
+    /* nice spacing for buttons */
+    display: flex;
+    justify-content: space-around;
+    /* light overline */
+    border-top: 1px solid rgba(160,160,160,0.2);
+    /* adjust height */
+    line-height: 1.5;
+    height: 1.5em;
+    /* inner padding for nice look */
+    padding: 1em 1.5em;
+    /* take the minimum height */
+    flex-shrink: 1;
+}
+.card-action a{
+    /* font work */
+    font-size: 0.9em;
+    text-align: center;
+    color: #ffab40;
+    margin-right: 24px;
+    text-transform: uppercase;
+    /* hover transition */
+    -webkit-transition: color .25s ease;
+    transition: color .25s ease;
+    /* overflow effect */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-action a:hover{
+    /* slight change of color */
+    color: #ffd180;
+    /* overflow effect */
+    overflow: visible;
 }
 
-.out {
-    height: 3em;
-    visibility: hidden;
+
+
+
+
+
+/* ____________________ FOOTER ____________________ */
+footer{
+    /* arrange sub boxes */
+    display: flex;
+    flex-wrap: wrap;
+    /* size */
+    padding-top: 1.2em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 0.8em;
+    margin: 0;
+    /* colors */
+    color:white;
+    background-color: #607d8b;
 }
-
-.colorPrimary {
-    background-color: #607d8b !important;
+h6{
+    /* font work */
+    font-weight: 500;
+    font-size: 1.2em;
+    /* small vertical margins */
+    margin: 0.3em 0;
 }
-
-
+/* profile */
+.contact{
+    /* spacing */
+    padding: 0 1em;
+    margin: 0;
+    margin-right: 1em;
+}
+.contact p{
+    /* font work */
+    font-size: 0.8em;
+    /* no-margin */
+    margin: 0;
+}
+.field{
+    /* italic font */
+    font-style: italic;
+}
+/* links */
+.links{
+    /* spacing */
+    padding: 0 1em;
+}
 .circle-bt {
+    /* size work */
     height: 3em;
-    width: 3em;
+    /*width: 3em;*/
 }
 
-.space {
-    width: 1em;
+@media screen and (min-width: 850px) {
+    footer {
+        padding-left: 10%;
+    }
+}
+
+/* ____________________ COPYRIGHT ____________________ */
+.copyright{
+    /* text */
+    color: white;
+    text-align: right;
+    font-size: 0.7em;
+    /* background */
+    background-color:  #5c7784;
+    /* size */
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 0px;
 }
