@@ -144,6 +144,15 @@ a:hover{
 .hidden-link:hover{
     color: rgba(0, 0, 0, 0.42);
 }
+.icon{
+    position: relative;
+    top: 0.1em;
+    height: 0.9em;
+    transition: filter .2s ease;
+}
+.icon:hover {
+    filter: brightness(125%);
+}
 .sub{
     /* left shift */
     padding-left: 1em;
