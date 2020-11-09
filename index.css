@@ -85,6 +85,7 @@ nav{
     /* overflow effect */
     overflow: visible;
 }
+
 @media screen and (max-width: 650px){
     .tab{
         padding: 0 3px;
@@ -104,6 +105,9 @@ h4{
     font-weight: bold;
     font-size: 2em;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+.space{
+    height: 15em;
 }
 /* ____________________ MAIN CONTENT ____________________ */
 .anchor {
@@ -410,4 +414,29 @@ h6{
     padding-right: 15px;
     padding-bottom: 10px;
     padding-left: 0px;
+}
+
+
+/* ____________________ TXT PIC ____________________ */
+.pic{
+    /* nice disposition of the cards */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    padding: 0;
+    padding-right: 5em;
+}
+@media screen and (max-width: 850px) {
+    .pic {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 650px) {
+    .pic {
+        align-items: center;
+    }
+}
+pre{
+    color: #607d8b;
+    font-size: 0.1em;
 }
