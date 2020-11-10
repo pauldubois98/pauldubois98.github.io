@@ -440,3 +440,8 @@ pre{
     color: #607d8b;
     font-size: 3px;
 }
+@media screen and (max-width: 850px) {
+    pre {
+        font-size: 2px;
+    }
+}
