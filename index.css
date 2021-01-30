@@ -43,17 +43,12 @@ header h1{
     font-weight: 200;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
-nav{
-    /* margins */
-    padding-top: 0.8em;
-    padding-bottom: 0.5em;
-}
 .tabs{
     /* align horizontally */
     display: flex;
     justify-content: space-around;
     /* slight margin on the left */
-    padding: 0 2em;
+    padding: 0.5em 0;
     /* space around */
     margin: 0;
 }
@@ -69,6 +64,8 @@ nav{
     /* font work */
     text-transform: uppercase;
     font-size: 0.85em;
+    width: 10em;
+    text-align: center;
     font-weight: normal;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
     /* hover transition */
@@ -200,6 +197,8 @@ ul {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: stretch;
+    width: 90%;
+    margin: auto;
 }
 .card{
     /* arrange sub items*/
