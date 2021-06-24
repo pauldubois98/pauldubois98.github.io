@@ -46,6 +46,7 @@ header h1{
 .tabs{
     /* align horizontally */
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     /* slight margin on the left */
     padding: 0.5em 0;
@@ -55,8 +56,7 @@ header h1{
 .tab{
     /* color (to be slightly chnaged on hover) */
     color: rgba(255,255,255,0.7);
-    /* padding 0 vertically, 12px horizontally*/
-    padding: 0 12px;
+    margin: 0.1em 0;
     /* change mouse pointer */ 
     cursor: pointer;
     /* delete the dot from listing */
@@ -205,7 +205,7 @@ ul {
     display: flex;
     flex-direction: column;
     /* size */
-    min-width: 15em;
+    min-width: 17.5em;
     max-width: 20em;
     width: 30%;
     min-height: 5em;
