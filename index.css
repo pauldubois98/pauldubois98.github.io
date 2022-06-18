@@ -309,12 +309,13 @@ ul {
     /* light overline */
     border-top: 1px solid rgba(160,160,160,0.2);
     /* adjust height */
-    line-height: 1.5;
-    height: 1.5em;
+    line-height: 2;
     /* inner padding for nice look */
-    padding: 1em 1.5em;
+    padding: 0.75em;
     /* take the minimum height */
     flex-shrink: 1;
+    /* multiline if needed*/
+    flex-wrap: wrap;
 }
 .card-action a{
     /* font work */
