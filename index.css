@@ -401,22 +401,6 @@ h6{
     }
 }
 
-/* ____________________ COPYRIGHT ____________________ */
-.copyright{
-    /* text */
-    color: white;
-    text-align: right;
-    font-size: 0.7em;
-    /* background */
-    background-color:  #5c7784;
-    /* size */
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    padding-left: 0px;
-}
-
-
 /* ____________________ TXT PIC ____________________ */
 .pic{
     /* nice disposition of the cards */
