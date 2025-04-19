@@ -191,7 +191,7 @@ ul {
 }
 
 /* ____________________ CARDS ____________________ */
-.Projects{
+.cards{
     /* nice disposition of the cards */
     display: flex;
     flex-wrap: wrap;
